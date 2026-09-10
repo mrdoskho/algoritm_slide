@@ -1,39 +1,33 @@
-const slides = document.querySelectorAll('.slide');
+const faces = document.querySelectorAll('.face');
 let current = 0;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateY(${(i - index) * 100}vh)`;
+function showFace(index) {
+    faces.forEach(face => {
+        face.classList.remove('active');
     });
+
+    faces[index].classList.add('active');
 }
 
-function nextSlide() {
-    if (current < slides.length - 1) {
-        current++;
-        showSlide(current);
-    }
-}
-
-function prevSlide() {
-    if (current > 0) {
-        current--;
-        showSlide(current);
-    }
-}
-
-// Клик мышью — следующий слайд
-document.addEventListener('click', nextSlide);
-
-// Стрелки клавиатуры
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-        nextSlide();
+
+    if (
+        e.key === 'ArrowRight' ||
+        e.key === 'ArrowDown'
+    ) {
+        if (current < faces.length - 1) {
+            current++;
+            showFace(current);
+        }
     }
 
-    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-        prevSlide();
+    if (
+        e.key === 'ArrowLeft' ||
+        e.key === 'ArrowUp'
+    ) {
+        if (current > 0) {
+            current--;
+            showFace(current);
+        }
     }
 });
-
-showSlide(0);
-slide.style.transform = `translateX(${(i - index) * 100}vw)`;
