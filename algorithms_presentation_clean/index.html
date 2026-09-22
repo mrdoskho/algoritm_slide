@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Современная веб-презентация по информатике: алгоритмы и исполнители">
+  <title>Алгоритмы и исполнители</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#slide-1" aria-label="На главный слайд">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span>Информатика</span>
+    </a>
+  </header>
+
+  <main class="deck" id="deck">
+    <!-- 1 -->
+    <section class="slide active" id="slide-1" data-title="Алгоритмы и исполнители">
+      <div class="hero-wrap">
+        <div class="eyebrow"><span class="dot"></span> Веб-презентация • 2026</div>
+        <h1>Алгоритмы<br><span>и исполнители</span></h1>
+        <p class="lead">Как последовательность команд превращается в результат — от действий человека до работы компьютеров и роботов.</p>
+        <div class="hero-tags">
+          <span>Алгоритм</span><span>Исполнитель</span><span>Команды</span><span>Результат</span>
+        </div>
+        <div class="cta-label">Нажмите в любом месте, чтобы начать <span>→</span></div>
+      </div>
+      <div class="hero-code">
+        <div class="code-head"><span></span><span></span><span></span><small>algorithm.exe</small></div>
+        <pre><code>START
+  input(task)
+  analyze(task)
+  choose(commands)
+  execute(commands)
+  check(result)
+FINISH</code></pre>
+      </div>
+      <div class="hint">Нажимай → или пробел для перелистывания</div>
+    </section>
+
+    <!-- 2 -->
+    <section class="slide" id="slide-2" data-title="Понятие алгоритма">
+      <div class="slide-label">01 — ПОНЯТИЕ</div>
+      <div class="split">
+        <div>
+          <h2>Что такое <span>алгоритм?</span></h2>
+          <p>Алгоритм — это <strong>конечная и понятная последовательность команд</strong>, которая описывает, как решить задачу или получить нужный результат.</p>
+          <p>Иными словами, алгоритм отвечает на вопрос: <em>«Что делать, в каком порядке и когда остановиться?»</em></p>
+        </div>
+        <div class="definition-card">
+          <div class="big-symbol">01</div>
+          <h3>Задача → команды → результат</h3>
+          <div class="flow">
+            <span>🎯 Задача</span><i>→</i><span>⚙️ Алгоритм</span><i>→</i><span>✅ Результат</span>
+          </div>
+        </div>
+      </div>
+      <div class="note">Главная идея: алгоритм не должен заставлять исполнителя «догадываться» о следующем действии.</div>
+    </section>
+
+    <!-- 3 -->
+    <section class="slide" id="slide-3" data-title="Свойства алгоритма">
+      <div class="slide-label">02 — СВОЙСТВА</div>
+      <h2>Каким должен быть <span>хороший алгоритм?</span></h2>
+      <div class="cards six">
+        <article class="info-card"><b>01</b><h3>Дискретность</h3><p>Алгоритм состоит из отдельных шагов, выполняемых последовательно.</p></article>
+        <article class="info-card"><b>02</b><h3>Определённость</h3><p>Каждая команда должна быть однозначной и понятной исполнителю.</p></article>
+        <article class="info-card"><b>03</b><h3>Конечность</h3><p>Выполнение алгоритма должно завершаться за конечное число действий.</p></article>
+        <article class="info-card"><b>04</b><h3>Результативность</h3><p>После выполнения должен быть получен требуемый результат.</p></article>
+        <article class="info-card"><b>05</b><h3>Массовость</h3><p>Алгоритм можно применять к целому классу похожих задач.</p></article>
+        <article class="info-card"><b>06</b><h3>Понятность</h3><p>Команды должны входить в систему команд исполнителя.</p></article>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="slide" id="slide-4" data-title="Исполнитель">
+      <div class="slide-label">03 — ИСПОЛНИТЕЛЬ</div>
+      <div class="split reverse">
+        <div class="robot-card">
+          <div class="robot-face"><span class="eye"></span><span class="eye"></span></div>
+          <div class="robot-body">EXECUTOR</div>
+          <div class="robot-status"><i></i> READY</div>
+        </div>
+        <div>
+          <h2>Кто такой <span>исполнитель?</span></h2>
+          <p>Исполнитель — это человек, устройство или программа, которые умеют выполнять команды алгоритма.</p>
+          <div class="quote">«Исполнитель действует только в пределах своей системы команд.»</div>
+          <p class="muted">Например, компьютер понимает машинные инструкции, а робот-пылесос — команды, связанные с движением, уборкой и зарядкой.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section class="slide" id="slide-5" data-title="Система команд">
+      <div class="slide-label">04 — КОМАНДЫ</div>
+      <h2>Система команд <span>исполнителя</span></h2>
+      <p class="section-sub">Для каждого исполнителя существует набор допустимых действий — система команд исполнителя, или СКИ.</p>
+      <div class="command-board">
+        <div class="command-title"><span class="led"></span> ROBOT_CONTROL / COMMANDS</div>
+        <div class="commands">
+          <span>ВПЕРЁД</span><span>НАЗАД</span><span>НАЛЕВО</span><span>НАПРАВО</span>
+          <span>СТОП</span><span>ПОВТОРИТЬ</span><span>ПОДНЯТЬ</span><span>ОПУСТИТЬ</span>
+        </div>
+      </div>
+      <div class="two-cols">
+        <div><h3>Команда</h3><p>Отдельное указание исполнителю выполнить определённое действие.</p></div>
+        <div><h3>Программа</h3><p>Последовательность команд, записанная в форме, понятной исполнителю.</p></div>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section class="slide" id="slide-6" data-title="Виды алгоритмов">
+      <div class="slide-label">05 — СТРУКТУРА</div>
+      <h2>Основные <span>виды алгоритмов</span></h2>
+      <div class="structure-grid">
+        <article class="structure-card">
+          <div class="num">A</div><h3>Линейный</h3>
+          <p>Команды выполняются одна за другой, без пропусков.</p>
+          <div class="mini-flow">① → ② → ③ → ④</div>
+          <small>Пример: инструкция по сборке.</small>
+        </article>
+        <article class="structure-card">
+          <div class="num">B</div><h3>Разветвляющийся</h3>
+          <p>В зависимости от условия выбирается один из вариантов действий.</p>
+          <div class="mini-flow">условие? → ДА / НЕТ</div>
+          <small>Пример: «Если идёт дождь — взять зонт».</small>
+        </article>
+        <article class="structure-card">
+          <div class="num">C</div><h3>Циклический</h3>
+          <p>Группа команд повторяется несколько раз или пока верно условие.</p>
+          <div class="mini-flow">↻ ① → ② → ③</div>
+          <small>Пример: повторение шагов тренировки.</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="slide" id="slide-7" data-title="Человек">
+      <div class="slide-label">06 — ПРИМЕР</div>
+      <div class="split">
+        <div>
+          <h2>Алгоритм может выполнять <span>человек</span></h2>
+          <p>Многие привычные действия состоят из алгоритмов. Например, приготовление чая — это последовательность понятных шагов.</p>
+          <div class="steps">
+            <div><b>01</b><span>Вскипятить воду</span></div>
+            <div><b>02</b><span>Положить чай в чашку</span></div>
+            <div><b>03</b><span>Залить кипятком</span></div>
+            <div><b>04</b><span>Подождать и получить результат</span></div>
+          </div>
+        </div>
+        <div class="visual-card tea">
+          <div class="cup">☕</div><span>Бытовой алгоритм</span>
+          <strong>ЧАЙ ГОТОВ</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 -->
+    <section class="slide" id="slide-8" data-title="Компьютер">
+      <div class="slide-label">07 — ПРИМЕР</div>
+      <div class="split reverse">
+        <div class="computer-window">
+          <div class="window-bar"><span>calculator.py</span><span>● ● ●</span></div>
+          <pre>n = 7
+m = 5
+result = n + m
+print(result)</pre>
+          <div class="terminal">OUTPUT: <b>12</b></div>
+        </div>
+        <div>
+          <h2>Компьютер — <span>автоматический исполнитель</span></h2>
+          <p>Компьютер способен очень быстро выполнять огромные последовательности команд.</p>
+          <p>Но у него есть ограничение: он выполняет только те операции, которые предусмотрены программой и поддерживаются его системой команд.</p>
+          <div class="stats">
+            <div><b>7 + 5</b><span>входные данные</span></div>
+            <div><b>→ 12</b><span>результат</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 -->
+    <section class="slide" id="slide-9" data-title="Роботы">
+      <div class="slide-label">08 — ПРИМЕР</div>
+      <h2>Алгоритмы в <span>роботах</span></h2>
+      <p class="section-sub">Робот получает данные из окружающего мира, обрабатывает их и выбирает действие.</p>
+      <div class="robot-process">
+        <div class="process-item"><div>👁️</div><b>Датчики</b><span>Получают информацию</span></div>
+        <div class="arrow">→</div>
+        <div class="process-item"><div>🧠</div><b>Алгоритм</b><span>Принимает решение</span></div>
+        <div class="arrow">→</div>
+        <div class="process-item"><div>⚙️</div><b>Исполнитель</b><span>Делает действие</span></div>
+        <div class="arrow">→</div>
+        <div class="process-item"><div>✅</div><b>Результат</b><span>Проверяет состояние</span></div>
+      </div>
+      <div class="note">Такой принцип используется в роботах-пылесосах, промышленных роботах, дронах и других автоматизированных системах.</div>
+    </section>
+
+    <!-- 10 -->
+    <section class="slide" id="slide-10" data-title="Жизнь вокруг нас">
+      <div class="slide-label">09 — ВОКРУГ НАС</div>
+      <h2>Алгоритмы <span>повсюду</span></h2>
+      <div class="life-grid">
+        <article><span>🗺️</span><h3>Навигатор</h3><p>Строит маршрут и пересчитывает его при изменении ситуации.</p></article>
+        <article><span>🚦</span><h3>Светофор</h3><p>Переключает сигналы по заданной последовательности и времени.</p></article>
+        <article><span>🎮</span><h3>Игра</h3><p>Обрабатывает действия игрока и правила игрового мира.</p></article>
+        <article><span>📱</span><h3>Смартфон</h3><p>Исполняет программы, реагирует на нажатия и события.</p></article>
+        <article><span>🏭</span><h3>Производство</h3><p>Роботы выполняют повторяющиеся операции с высокой точностью.</p></article>
+        <article><span>🤖</span><h3>ИИ</h3><p>Обрабатывает входные данные и формирует ответ по заданным моделям.</p></article>
+      </div>
+    </section>
+
+    <!-- 11 -->
+    <section class="slide" id="slide-11" data-title="Почему это важно">
+      <div class="slide-label">10 — ЗНАЧЕНИЕ</div>
+      <div class="center">
+        <h2>Почему важно понимать <span>алгоритмы?</span></h2>
+        <p class="section-sub wide">Алгоритмическое мышление помогает разбивать сложную задачу на понятные этапы, находить ошибки и создавать эффективные решения.</p>
+        <div class="benefits">
+          <div><b>01</b><h3>Логика</h3><p>Учимся рассуждать последовательно.</p></div>
+          <div><b>02</b><h3>Точность</h3><p>Учитываем условия и детали.</p></div>
+          <div><b>03</b><h3>Эффективность</h3><p>Ищем более быстрый путь к цели.</p></div>
+          <div><b>04</b><h3>Автоматизация</h3><p>Передаём повторяющиеся действия машинам.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 -->
+    <section class="slide" id="slide-12" data-title="Итог">
+      <div class="final-mark">✓</div>
+      <div class="eyebrow"><span class="dot"></span> ФИНАЛ</div>
+      <h2>Алгоритм задаёт <span>путь</span>,<br>исполнитель превращает его в <span>действие</span>.</h2>
+      <p class="lead">Без алгоритма нет понятной последовательности действий, а без исполнителя команды не превращаются в результат.</p>
+      <div class="hero-tags"><span>Задача</span><span>Алгоритм</span><span>Исполнитель</span><span>Результат</span></div>
+      <div class="cta-label">Нажмите в любом месте, чтобы начать заново <span>↻</span></div>
+      <div class="thanks">Спасибо за внимание!</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
